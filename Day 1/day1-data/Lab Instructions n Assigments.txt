@@ -1,0 +1,46 @@
+Day 1
+0. Follow installation instructions from
+installation help\Installation instructions for JDK n IDE.txt"
+Confirm JDK 11
+
+
+1. Have you already created a new workspace for Java EE ?
+If not : Create a new workspace for Java EE
+Follow steps from :
+"installation help\web server\Installation instructions for Tomcat.txt"
+Add Tomcat server to the workspace
+
+
+2. Extract Java EE docs from : "installation help\Java EE docs\javaee-api-8.0-javadoc.jar"
+
+
+Hands on :
+3. Create a dynamic web project (day1_lab) , test HTML contents (index.html)
+3.1 Add a servlet , to be deployed using annotations
+3.2 Add a servlet , to be deployed using xml tags.
+
+Confirm complete servlet life cycle
+(by printing messages on the server console)
+
+Complete the following , with Lab Faculty's help.
+
+4. Use Mysql 8 DB.
+Either use Mysql workbench or Mysql cmd line client
+
+4.1 Create a Java project (not a web project : day1.1_lab) with JDBC driver
+Copy from "day1_data\day1_help\jdbc help\sql\voting sql.txt" , users table
+
+Solve : Voter signin 
+Steps
+1.Tables : users 
+2. POJOs : User (voting status : boolean)
+3 Create DBUtils: edit DB user name n pwd
+openConnection
+closeConnection
+getConnection
+4. DAO
+4.1 IUserDao
+User  authenticateUser(String email,String pwd) throws SqlException
+4.2 Implementation class
+5. Write a tester for testing this
+
